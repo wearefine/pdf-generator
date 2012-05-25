@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>FINE PDF Generator</title>
+  
+  <%= wicked_pdf_stylesheet_link_tag "main" %>
+  <%= wicked_pdf_stylesheet_link_tag "print" %>
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <section id="container">
+    <header>
+      <h1>FINE PDF Generator Prototype</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><%= link_to " head home", root_path %></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="content">
+      <%= yield %>
+    </section><!-- / content -->
+  
+  </section><!-- / container -->
+
+</body>
+</html>

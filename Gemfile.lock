@@ -120,11 +120,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano
+  capistrano (~> 2.12.0)
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.3)
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
-  wicked_pdf
+  wicked_pdf (~> 0.7.9)

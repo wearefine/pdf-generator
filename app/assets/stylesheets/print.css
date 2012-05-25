@@ -36,9 +36,8 @@ ol#accessibility-nav,
 /* --------------------------------------------------------------------------------- */
 
 
-.container {
+#container {
   width: auto;
-  float: left;
 	margin: 0;
 	padding: 0;
 	background: transparent;
@@ -65,26 +64,10 @@ ol#accessibility-nav,
   left: 0px;
 }
 
-#content {
-  margin-left: 160px;
-  display: block;
-}
-
 .sell_sheet_builder #content {
   margin-left: 0px;
 }
 
-/*
-.container hgroup h2 {
-  margin: 0px;
-  font: 12pt Georgia;
-  display: block;
-  color: #895F39;
-  position: absolute;
-  top: 60px;
-  left: 158px;
-}
-*/
 
 .container hgroup {
   display: none;
@@ -458,7 +441,8 @@ ul#sidebar,
 .profile-page .data .title span,
 .brown-btn,
 .play,
-.user-nav
+.user-nav,
+header
   {
 	display: none !important;
 	position: absolute;
@@ -959,17 +943,10 @@ section.page .wine-big .left .price strong {
   page-break-before: always;
 }
 
-#page4 .header:first-child {
-  page-break-before: inherit;
-}
-
 #page4 .header,
 .printed-products {
 	padding: 0;
 	clear: both;
-}
-.cover-page {
-  page-break-after: always;
 }
 
 .hide-cover .cover-page {
@@ -1008,13 +985,14 @@ section.page .header .con h2 {
 
 
 section.page .header img {
-  max-width: 180px;
+  float: left;
 }
 
 section.page .wine-big .left {
-  margin-left: 0px;
-  width: 140px;
+  margin-left: 80px;
+  width: 160px;
   margin-top: 20px;
+  float: left;
 }
 
 #page4 .wine-big .left img {
@@ -1034,9 +1012,11 @@ section.page .wine-big .left {
 }
 
 #page4 .info {
-  padding: 0px;
-  padding-left: 10px;
-  width: 120px;
+  margin-left: 80px;
+  width: 160px;
+  margin-top: 20px;
+  float: left;
+  height: 400px;
 }
 
 #page4 .info a,
@@ -1056,6 +1036,7 @@ section.page .wine-big .left {
 #page4 .contact {
   margin: 0px;
   overflow: visible;
+  clear: both;
 }
 
 #page4 .header .con {
@@ -1181,6 +1162,7 @@ section.page .cover-header .con {
 
 #page4 .wine-big {
 	padding: 0;
+	clear: both;
 }
 
 .mozilla #page4 .wine-big {
