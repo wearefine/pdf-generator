@@ -18,10 +18,10 @@ html, button, input, select, textarea { font-family: helvetica, sans-serif; }
 body { margin: 0; font-size: 1em; line-height: 1.4; background: $tan; color: $gray; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: $brown; color: #fff; text-shadow: none; }
 
-a { color: $green; }
-a:hover { text-decoration: none; }
+a { color: $green; text-decoration: none; border-bottom: dotted 1px $green; }
+a:hover { text-decoration: none; border: none; background: #fff; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
