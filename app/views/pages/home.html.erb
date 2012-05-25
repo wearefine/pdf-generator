@@ -4,5 +4,19 @@
 <p>Wicked PDF uses the shell utility <a href="http://code.google.com/p/wkhtmltopdf/" target="_blank">wkhtmltopdf</a> to serve a PDF file to a user from HTML. In other words, rather than dealing with a PDF generation DSL of some sort, you simply write an HTML view as you would normally, then let Wicked take care of the hard stuff.</p>
 <p>
   <%= link_to "Documentation", "https://github.com/mileszs/wicked_pdf", :target => '_blank' %><br />
-  <%= link_to "Example PDF", wicked_pdf_path %>
+  <%= link_to "Example PDF", wicked_pdf_path(:format => 'pdf'), :class => 'pdf_link' %>
+</p>
+
+<h2>PDFkit</h2>
+<p>Similar to wicked_pdf, only it uses a middleware to render any page with "PDF" format as a PDF.</p>
+<p><%= link_to "Documentation", "https://github.com/pdfkit/PDFKit", :target => '_blank' %></p>
+
+<h2>Prawn</h2>
+<p>Prawn generates PDFs with a built-in renderer. You built out the markup within a Ruby class using their syntax.</p>
+<p>Syntax takes a bit to get used to, but you can really dial in</p>
+
+<p>
+  <%= link_to "Documentation", "http://prawn.majesticseacreature.com/", :target => '_blank' %><br />
+  <%= link_to "Railscast", "http://railscasts.com/episodes/153-pdfs-with-prawn-revised", :target => '_blank' %><br />
+  <%= link_to "Example PDF", prawn_path(:format => 'pdf'), :class => 'pdf_link' %>
 </p>

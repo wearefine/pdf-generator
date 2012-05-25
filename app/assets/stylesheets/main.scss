@@ -102,6 +102,9 @@ td { vertical-align: top; }
 
 h1, h2, h3 { margin: 0 0 .5em; font-weight: none; }
 
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 25px; }
+
 header { margin-bottom: 50px;}
 
 #container {
@@ -110,5 +113,17 @@ header { margin-bottom: 50px;}
   background: $cream;
   padding: 50px;
 }
+
+.pdf_link {
+  display: block;
+  width: 170px;
+  text-align: center;
+  margin: 1em 0;
+  padding: 10px;
+  background: $green;
+  color: $cream;
+  border: none;
+}
+  .pdf_link:hover { background: $gray; color: $cream; }
 
 

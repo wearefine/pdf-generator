@@ -23,3 +23,4 @@ end
 gem 'jquery-rails'
 gem 'capistrano', '~> 2.12.0'
 gem 'wicked_pdf', '~> 0.7.9'
+gem 'prawn', '~> 0.12.0'

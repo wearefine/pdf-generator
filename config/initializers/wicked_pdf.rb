@@ -1,3 +1,4 @@
+# taken from: http://anlek.com/2011/09/wicked_pdf-working-in-rails-3-1/
 module WickedPdfHelper
   def wicked_pdf_stylesheet_link_tag(*sources)
     sources.collect { |source|
