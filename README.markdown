@@ -12,9 +12,13 @@ Wicked PDF uses the shell utility wkhtmltopdf to serve a PDF file to a user from
 
 Any machine producing PDFs with wicked_pdf (or PDFkit) will need the [wkhtmltopdf](http://code.google.com/p/wkhtmltopdf/) shell utility. Installing it locally is fairly straight forward. I downloaded the 0.9.9 OS X binary moved and renamed it to `/usr/local/bin/wkhtmltopdf`, then updated permissions to execute it.
 
-  cd /usr/local/bin
-  sudo chown root wkhtmltopdf
-  sudo chmod 755 wkhtmltopdf
+~~~
+
+cd /usr/local/bin
+sudo chown root wkhtmltopdf
+sudo chmod 755 wkhtmltopdf
+
+~~~
   
 For wicked_pdf to read assets from the asset pipeline I had to add an initializer that modified wicked\_pdfs helper methods. Find it at `initializers/wicked_pdf.rb`.
 
